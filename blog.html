@@ -241,7 +241,9 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 		repo: 'taoyc0802.github.io',
 		owner: 'taoyc0802',
 		admin: ['TAOYC0802'],
-		id: decodeURI(window.location.pathname),
+              id: location.pathname,
+              distractionFreeMode: false
+
     
     });
     gitalk.render('gitalk-container');
