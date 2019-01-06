@@ -234,9 +234,9 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
             <script src="http://zhoushengjie.pw/js/gitalk.min.js"></script>
             <script>
             var gitalk = new Gitalk({
-		clientID: '691cbe02788d91044f84',
-		clientSecret: '5c0b605e99eb09f98203c61b18f218b928a1e908',
-		repo: 'taoyc0802.github.io',
+		clientID: '',
+		clientSecret: '',
+		repo: '',
 		owner: 'taoyc0802',
 		admin: ['taoyc0802'],
               id: location.pathname,
@@ -244,6 +244,25 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
             })
             gitalk.render('gitalk-container')
             </script>
+<!-- Gitalk end -->
+	<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+		clientID: '691cbe02788d91044f84',
+		clientSecret: '5c0b605e99eb09f98203c61b18f218b928a1e908',
+		repo: 'taoyc0802.github.io',
+		owner: 'taoyc0802',
+		admin: ['taoyc0802'],
+              id: decodeURI(location.pathname),
+              distractionFreeMode: false
+    
+    });
+    gitalk.render('gitalk-container');
+</script> 
 <!-- Gitalk end -->
   </body>
 </html>
