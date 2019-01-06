@@ -241,7 +241,7 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 		repo: 'https://taoyc0802.github.io/blog.html',
 		owner: 'taoyc0802',
 		admin: ['taoyc0802'],
-		id:window.location.pathname,
+		id:decodeURI(window.location.pathname),
     
     });
     gitalk.render('gitalk-container');
