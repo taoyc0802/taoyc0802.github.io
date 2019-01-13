@@ -233,7 +233,7 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 	<!-- Link Gitalk 的支持文件  -->
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-	<div id="gitalk-container">const gitalk = new Gitalk({
+	<div id="gitalk-container"><script>const gitalk = new Gitalk({
   clientID: 'GitHub Application Client ID',
   clientSecret: 'GitHub Application Client Secret',
   repo: 'GitHub repo',
@@ -243,7 +243,7 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
   distractionFreeMode: false  // Facebook-like distraction free mode
 })
 
-gitalk.render('gitalk-container')</div>
+gitalk.render('gitalk-container')</script></div>
 <!-- Gitalk end -->
   </body>
 </html>
